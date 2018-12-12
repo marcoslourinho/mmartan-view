@@ -4,7 +4,7 @@ import './styles.css'
 
 const Product = ({ data: { product } }) => (
     <div>
-    <a href="" className="list-group-item" >
+    <a href="#" className="list-group-item" >
         <div className="row">
             <div className="col-4 product-item">
                 {product.pictures.photo_1 ? <img src={product.pictures.photo_1} className="img-responsive" height="60px" alt='first' /> : ''}
@@ -21,7 +21,7 @@ const Product = ({ data: { product } }) => (
                 </div>
             </div>
             <div className="col-4 product-price">
-                <del>{formatValue(product.price)}</del> por <span>{formatValue(product.discount_price)}</span>
+               de <del>{formatValue(product.price)}</del> por <span>{formatValue(product.discount_price)}</span>
             </div>
         </div>
     </a>

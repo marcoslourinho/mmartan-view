@@ -1,0 +1,33 @@
+.footer{
+    margin: 5% 5% 5% 5%;
+}
+
+.page-link{
+    color: #777 !important;
+}
+
+.pagination>li>a, 
+.pagination>li>span {
+    position: relative !important;
+    float: left !important;
+    padding: 6px 12px !important;
+    line-height: 1.42857143 !important;
+    text-decoration: none !important;
+    color: #ac7510 !important;
+    background-color: #fff !important;
+    border: 1px solid #ddd !important;
+    margin-left: -1px !important;
+}
+
+.pagination>li>a:hover{
+    background-color: #ededed !important;
+} 
+
+.pagination>.active>a, 
+.pagination>.active>a:focus{
+    z-index: 3 !important;
+    color: #fff !important;
+    background-color: #ac7510 !important;
+    border-color: #ac7510 !important;
+    cursor: default !important;
+}

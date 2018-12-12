@@ -1,0 +1,48 @@
+.brand{
+    height: 46px;
+}
+
+.header {
+    border-bottom: 1px solid #eee !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+}
+
+.header-search {
+    padding: 25px 0;
+    font-size: 25px;
+    background-color: #ececec;
+    z-index: -1;
+}
+
+.header-right {
+    text-align: right;
+}
+
+.header-left{
+    text-align: left;	
+}
+
+.header-left img {
+    width: 25%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.input-group {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.input-search {
+    height: 30px;
+    width: 50px !important;
+    padding-left:45px !important;   
+    line-height: 1.33;
+    border-width: 2px 4px !important;
+    border-radius: 40px !important;
+    background: url("../../pages/images/search.svg") left no-repeat;
+    background-size: 15px;
+    background-position-y: center;
+    background-position-x: 20px;
+}

@@ -14,17 +14,16 @@ and API with:
 git clone https://github.com/marcoslourinho/mmartan-api.git
 ````
 
-## Local configuration
+### `Local configuration`
+Follow the instructions to config and install on your local machine:
 
-Follow the instructions to config and install on your local machine
-
-### `Database Settings`
+## Database Settings
 
 1. Access [https://mlab.com/](https://mlab.com/) and create a account.
 2. Create a new free enviroment **mmartan**.
 3. Create a new collection **products**.
 4. Access users option and add a new database user.
-5. Access *mmartan-api/src/config/.env* and set your enviroment variables
+5. Access **mmartan-api/src/config/.env** and set your enviroment variables
 
 Access your initial seeds in API Project
 
@@ -43,7 +42,7 @@ and database is online and ready to your development procedures!
 **Obs:** *You can use local database with MongoDB if you need.* :)
 
 
-### `API Settings`
+## API Settings
 
 1. Make sure your environment variables in the **.env** file are correctly configured
 
@@ -64,7 +63,7 @@ and your REST API is ready to your development procedures!
 Obs: To access the backend features, you can replace the baseURL with **"https://mmartan-api.herokuapp.com/api/v1"** in *mmartan-view/src/services/api.js* to access resources in production or use **"http://localhost:3000/api/v1"** to consume the local API.
 
 
-### `View Settings`
+## View Settings
 
 1. Access project:
 ````

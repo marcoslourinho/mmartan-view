@@ -1,44 +1,85 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Enjoy this view demo in [https://mmartan-view.herokuapp.com/](https://mmartan-view.herokuapp.com/)
+and API demo in [https://mmartan-api.herokuapp.com/](https://mmartan-api.herokuapp.com/api/v1/products?page=1&limit=10).
 
-## Available Scripts
+## mmartan - Project Details
 
-In the project directory, you can run:
+Simple ReactJS project for mmartan consuming a Rest API in Nodejs and Typescript for product listing, pagination, search and select products per page.
 
-### `npm start`
+you can clone this view project with:
+````
+git clone https://github.com/marcoslourinho/mmartan-view.git
+````
+and API with:
+````
+git clone https://github.com/marcoslourinho/mmartan-api.git
+````
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Local configuration
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Follow the instructions to config and install on your local machine
 
-### `npm test`
+### `Database Settings`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Access [https://mlab.com/](https://mlab.com/) and create a account.
+2. Create a new free enviroment **mmartan**.
+3. Create a new collection **products**.
+4. Access users option and add a new database user.
+5. Access *mmartan-api/src/config/.env* and set your enviroment variables
 
-### `npm run build`
+Access your initial seeds in API Project
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+````
+cd mmartan-api/seed
+````
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+And import initial datas with:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+````
+ mongoimport -h <YourHost> -d mmartan -c products -u <YourUser> -p <YourPassword> --file products.json
+````
 
-### `npm run eject`
+and database is online and ready to your development procedures!
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Obs:** *You can use local database with MongoDB if you need.* :)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### `API Settings`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Make sure your environment variables in the **.env** file are correctly configured
 
-## Learn More
+2. Install project dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+````
+npm install
+````
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. To run the project on http://localhost:3000 use
+
+````
+nodemon
+````
+
+and your REST API is ready to your development procedures!
+
+Obs: To access the backend features, you can replace the baseURL with **"https://mmartan-api.herokuapp.com/api/v1"** in *mmartan-view/src/services/api.js* to access resources in production or use **"http://localhost:3000/api/v1"** to consume the local API.
+
+
+### `View Settings`
+
+1. Access project:
+````
+cd mmartan-view
+````
+
+2. Install project dependencies:
+````
+npm install
+````
+
+3. To run the project on http://localhost:3001 use
+````
+npm start
+````
+
+**And your local project is Done!** :)
+

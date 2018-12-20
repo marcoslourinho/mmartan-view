@@ -41,7 +41,7 @@ export default class Main extends Component {
     console.log('produtos=>', products);
     return (
       <div id='main'>
-        <Header search={this.search.bind(this)} />
+        <Header search={this.search} />
         <div className="galery">
           <div className="total-products">
             {pagination.total} PRODUTOS ENCONTRADOS
@@ -51,7 +51,7 @@ export default class Main extends Component {
               {products.map(product => (<Product key={product._id} data={{ product }} />))}
             </div>
           </div>
-          <Footer pagination={this.state.pagination} list={this.list.bind(this)} />
+          <Footer pagination={this.state.pagination} list={this.list} />
         </div>
       </div>
     );
